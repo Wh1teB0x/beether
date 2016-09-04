@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardBackgroundColor="#B6E6E6"
+    card_view:cardCornerRadius="8dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:text="comment"
+            android:id="@+id/text1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:text="comment"
+            android:id="@+id/text2"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/radioFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First" />
+            <RadioButton
+                android:id="@+id/radioSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second" />
+            <RadioButton
+                android:id="@+id/radioThird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Third"/>
+            <RadioButton
+                android:id="@+id/radioFourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fourth" />
+            <RadioButton
+                android:id="@+id/radioFifth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fifth" />
+        </RadioGroup>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

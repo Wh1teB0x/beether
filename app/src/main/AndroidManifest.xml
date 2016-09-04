@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gashfara.akitk.bether">
+    <!-- Required to scan for and connect to Estimote Beacons via Bluetooth. -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!-- Required for BLE scanning on Android 6.0 and above. -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Required to access Estimote Cloud. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QuestionnaireActivity"></activity>
+        <activity android:name=".CustomPinActivity"></activity>
+        <activity android:name=".QuestionnaireActivity_Recycle"></activity>
+        <activity android:name=".WebQuestActivity"></activity>
+        <activity android:name=".UserActivity"></activity>
+
+        <!-- For  passcord lock -->
+        <activity
+            android:name="org.wordpress.passcodelock.PasscodeUnlockActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- For passcord lock -->
+        <activity
+            android:name="org.wordpress.passcodelock.PasscodeManagePasswordActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

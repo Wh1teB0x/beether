@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.gashfara.akitk.bether"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    supportLibVersion = '23.2.1'  // variable that can be referenced to keep support libs consistent
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':modules:volley')
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.android.support:recyclerview-v7:${supportLibVersion}"
+    compile "com.android.support:percent:${supportLibVersion}"
+    compile "com.android.support:support-annotations:${supportLibVersion}"
+    compile "com.android.support:support-annotations:${supportLibVersion}"
+    // VectorDrawableCompat
+    // AnimatedVectorDrawableCompat
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.estimote:sdk:0.9.4@aar'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.beardedhen:androidbootstrap:2.2.0'
+    compile 'org.wordpress:passcodelock:1.+'
+    compile 'com.android.support:palette-v7:23.3.0'
+    compile 'com.android.support:support-vector-drawable:${supportLibVersion}'
+    compile 'com.android.support:animated-vector-drawable:${supportLibVersion}'
+    //QR code generator
+    compile 'com.google.zxing:core:3.2.1'
+    //pin code
+    compile 'com.github.orangegangsters:lollipin:1.9.1@aar'
+    //RippleView
+    compile 'com.github.traex.rippleeffect:ripple:1.3.1-OG'
+    //TypefaceView
+    compile 'com.github.omadahealth.typefaceview:typefaceview:1.3.0@aar'
+    //Lollipop dialogs https://github.com/lewisjdeane/L-Dialogs and buttons, animations etc...
+    compile 'uk.me.lewisdeane.ldialogs:ldialogs:1.2.0@aar'
+    compile 'nl.qbusict:cupboard:2.1.4'
+}

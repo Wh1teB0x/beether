@@ -1,0 +1,54 @@
+header, section {
+	font-family: "Lato", sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+
+/* original text style */
+.text-muted {
+	color: #bcbbbb;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+.title-super {
+	font-size: 60px;
+}
+
+a {
+	padding: 10px;
+}
+
+/* Small devices (tablets, 360px and up) */
+@media (min-width: 360px) and (max-width: 767px) {
+	.title-logo {
+		max-width: 100px;
+	}
+	.title-super {
+		font-size: 40px;
+	}
+	.nav{
+		font-size: 15px;
+	}
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199px) {
+	.title-super {
+		font-size: 50px;
+	}	
+}
+
+/* Large devices (large desktops, 1024px and up) */
+@media (min-width: 1200px) {
+	.title-super {
+		font-size: 60px;
+	}
+}

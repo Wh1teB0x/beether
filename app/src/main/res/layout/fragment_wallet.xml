@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gashfara.akitk.bether.SecondFragment">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/active_wallet_card"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/active_wallet_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkPrimaryColor"
+                android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+                android:textColor="@color/textPrimaryColor"
+                android:text="現在使用中のウォレットアカウント"/>
+
+            <TextView
+                android:id="@+id/active_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="loading..."
+                android:layout_below="@id/active_wallet_title"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/active_newwallet_card"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        android:layout_below="@id/active_wallet_card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/active_newwallet_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkPrimaryColor"
+                android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+                android:textColor="@color/textPrimaryColor"
+                android:text="ウォレット新規登録"/>
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/active_newwallet_title"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="#575757"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:hint="@string/enter_password"
+                android:minWidth="300dip"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="新規ウォレットアカウント作成"
+                android:layout_below="@id/edit_text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimaryColor"
+                android:background="@drawable/selector_button_bg"
+                style="?android:attr/borderlessButtonStyle" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/active_listwallet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkPrimaryColor"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+        android:textColor="@color/textPrimaryColor"
+        android:layout_below="@+id/active_newwallet_card"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="ウォレット一覧"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/active_listwallet_title"
+        android:background="@color/lightPrimaryColor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

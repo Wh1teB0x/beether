@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(document).bind('mobileinit',function(){
+            $.mobile.changePage.defaults.changeHash = false;
+            $.mobile.hashListeningEnabled = false;
+            $.mobile.pushStateEnabled = false;
+        });
+    </script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
+
+<!--    <script src="js/jquery-1.11.3.min.js"></script> -->
+
+
+
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <h2>アンケート：５段階評価でお答えください</h2>
+        <p>質問１：ジーズに入ってよかったと思いますか？</p>
+        <form role="form">
+          <label class="radio-inline">
+            <input type="radio" name="optradio">Option 1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio">Option 2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio">Option 3
+          </label>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

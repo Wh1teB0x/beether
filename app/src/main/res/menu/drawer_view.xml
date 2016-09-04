@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/ic_home_24dp"
+            android:title="ホーム"/>
+        <item
+            android:id="@+id/nav_remit_fragment"
+            android:icon="@drawable/ic_send_24dp"
+            android:visible="false"
+            android:title="送金・着金処理"/>
+        <item
+            android:id="@+id/nav_wallet_fragment"
+            android:icon="@drawable/ic_account_balance_wallet_24dp"
+            android:visible="false"
+            android:title="ウォレット管理"/>
+        <item
+            android:id="@+id/nav_history_fragment"
+            android:icon="@drawable/ic_restore_24dp"
+            android:title="ヒストリー"/>
+        <item
+            android:id="@+id/nav_about_fragment"
+            android:icon="@drawable/ic_apps_24dp"
+            android:title="About this app"/>
+    </group>
+</menu>
